@@ -1,5 +1,23 @@
 .utl-separator {
-    height: 13px;
-    border: 1px solid $color-grey;
-    margin: 0 20.3px;
+  height: 13px;
+  border: 1px solid $color-grey;
+  margin: 0 20.3px;
+}
+
+.utl-down-arrow {
+  &::after {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    font-size: 7px;
+    margin-#{$left}: 5.2px;
+    -moz-osx-font-smoothing: grayscale;
+    content: $icon-down-arrow;
+  }
 }
