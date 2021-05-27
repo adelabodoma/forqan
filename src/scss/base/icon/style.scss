@@ -1,0 +1,90 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mws4in');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mws4in#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?mws4in') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?mws4in') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?mws4in##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 10px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-left-arrow {
+  &:before {
+    content: $icon-left-arrow; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
+.icon-down-arrow {
+  &:before {
+    content: $icon-down-arrow; 
+  }
+}
+.icon-share {
+  &:before {
+    content: $icon-share; 
+  }
+}
+.icon-right-arrow {
+  &:before {
+    content: $icon-right-arrow; 
+  }
+}
+.icon-calender {
+  &:before {
+    content: $icon-calender; 
+  }
+}
+.icon-qoute {
+  &:before {
+    content: $icon-qoute; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star; 
+  }
+}
+
