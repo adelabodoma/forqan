@@ -30,8 +30,18 @@ $grid-breakpoints: (
   //   xxl: 1500px
 );
 
-// //  FONT FAMILY
-$font-family-base: Almarai!important;
+// BUTTONS
+$btn-padding-y: 10px;
+$btn-padding-x: 30px;
+$btn-border-radius: 23px;
+$btn-font-size: 14px;
+$btn-font-weight: bold;
 
+$btn-padding-y-lg: 16px;
+$btn-padding-x-lg: 99px;
+$btn-border-radius-lg: 30px;
+
+// //  FONT FAMILY
+$font-family-base: Almarai !important;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";

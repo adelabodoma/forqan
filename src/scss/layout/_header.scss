@@ -4,46 +4,122 @@
     height: 60px;
     display: flex;
     align-items: center;
-  }
 
-  &__account {
-    margin-#{$right}: auto;
-    margin-#{$left}: 25px;
-
-    &__change-lang {
-      .icon {
-        margin-#{$left}: 5.2px;
-        font-size: rem(7);
+    &__account {
+      margin-#{$right}: auto;
+      margin-#{$left}: 25px;
+  
+      &__change-lang {
+        .icon {
+          margin-#{$left}: 5.2px;
+          font-size: rem(7);
+        }
       }
+    }
+  
+    &__social-links {
+      display: flex;
+      align-items: center;
+  
+      .icon {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        border-radius: 50%;
+        font-size: rem(9);
+      }
+  
+      &__item {
+        &:not(:last-child) {
+          .icon {
+            margin-#{$right}: 15px;
+          }
+        }
+      }
+    }
+  
+    &__current-date {
+      text-align: #{$right};
     }
   }
 
-  &__social-links {
-    display: flex;
-    align-items: center;
+  &__nav {
+    background-color: $color-dark;
+    color: $color-grey;
+    border-top: 1px solid $color-light-grey;
+    border-bottom: 1px solid $color-light-grey;
+    padding: 25px 0;
 
-    .icon {
-      width: 25px;
-      height: 25px;
+    &__logo {
+      margin-#{$right}: 40px;
+    }
+
+    &__items {
       display: flex;
       align-items: center;
-      justify-content: center;
-      border: 1px solid $primary-color;
-      color: $primary-color;
-      border-radius: 50%;
-      font-size: rem(9);
+      justify-content: space-between;
     }
 
     &__item {
       &:not(:last-child) {
-        .icon {
-          margin-#{$right}: 15px;
+        margin-#{$right}: 25px;
+      }
+
+      &__link {
+         &--search {
+          font-size: rem(15);
         }
       }
     }
+
+    &__login {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__button {
+        margin-#{$left}: auto;
+        margin-#{$right}: 40px
+      }
+    }
+
   }
 
-  &__current-date {
-    text-align: #{$right};
+  &__main {
+    height: calc(100vh - 193px);
+    background-image: url(../assets/img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+      width: 35%;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 100px;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // flex-direction: column;
+
+      &__heading {
+        font-size: rem(34);
+        font-family: Almarai-bold;
+        margin-bottom: 20px;
+        line-height: 68px;
+      }
+
+      &__heading-1 {
+        font-size: rem(16);
+        margin-bottom: 40px;
+        color: $color-light;
+        line-height: 26px;
+        padding: 0 60px;
+      }
+    }
   }
 }
