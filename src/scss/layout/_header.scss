@@ -91,7 +91,7 @@
 
   &__main {
     height: calc(100vh - 193px);
-    background-image: url(../assets/img/hero.png);
+    background-image: url(../img/hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -101,10 +101,6 @@
       text-align: center;
       margin: 0 auto;
       padding-top: 100px;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-      // flex-direction: column;
 
       &__heading {
         font-size: rem(34);
