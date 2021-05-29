@@ -22,8 +22,17 @@
   }
 }
 
-
 .utl-btn-primary {
     background-color: $primary-color;
     color: $color-white;
+}
+
+.utl-link {
+  font-family: $font-bold;
+  font-size: rem(14);
+  color: $primary-color;
+
+  &:hover {
+    color: $color-dark;
+  }
 }

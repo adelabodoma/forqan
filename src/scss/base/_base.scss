@@ -3,7 +3,7 @@ body {
 	direction: #{$direction};
 	text-align: #{$left};
 	box-sizing: border-box;
-	font-family: Almarai;
+	font-family: $font-regular;
 	color: $color-white;
 	font-size: 14px!important;
 

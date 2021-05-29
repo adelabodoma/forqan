@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   bottom: -150px;
-//   margin-bottom: 150px; // test
+  //   margin-bottom: 150px; // test
 
   &__cards {
   }
@@ -21,7 +21,7 @@
 
     &__count {
       font-size: rem(26);
-      font-family: Almarai-bold;
+      font-family: $font-bold;
     }
 
     &__label {
@@ -37,26 +37,59 @@
     display: flex;
     align-items: center;
 
-    .swiper-button-next, .swiper-button-prev {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background-color: $primary-color;
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: $primary-color;
 
-        &::after {
-            font-size: rem(18);
-            color: $color-white;
-        }
+      &::after {
+        font-size: rem(18);
+        color: $color-white;
+      }
     }
 
     .swiper-button-disabled {
-        border: 1px solid $primary-color;
-        background-color: $color-white;
-        opacity: 1;
+      border: 1px solid $primary-color;
+      background-color: $color-white;
+      opacity: 1;
 
-        &::after {
-            color: $primary-color;
-        }
+      &::after {
+        color: $primary-color;
+      }
     }
+  }
+}
+
+.about {
+  padding-top: 250px;
+
+  &__image {
+      position: relative;
+
+      &__img {
+          &--1 {
+              padding: 15px;
+              border: 1px solid $primary-color;
+              border-radius: 50%;
+
+          }
+
+          &--2 {
+              position: absolute;
+              #{$right}: 0;
+              top: 50%;
+              transform: translateY(-50%);
+          }
+      }
+  }
+
+  &__buttons {
+      margin-top: 50px;
+
+      & > *:not(:last-child) {
+          margin-#{$right}: 20px
+      }
   }
 }
