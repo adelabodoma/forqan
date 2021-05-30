@@ -2,15 +2,11 @@
   position: absolute;
   width: 100%;
   bottom: -150px;
-  //   margin-bottom: 150px; // test
-
-  &__cards {
-  }
 
   &__card {
     text-align: center;
     color: $color-dark;
-    box-shadow: 5px 10px 30px rgba(28, 27, 25, 0.2);
+    box-shadow: 1px -5px 20px rgb(28 27 25 / 10%);
     border-radius: 6px;
     background-color: $color-white;
     padding: 55px;
@@ -23,47 +19,12 @@
       font-size: rem(26);
       font-family: $font-bold;
     }
-
-    &__label {
-    }
-  }
-
-  &__controls {
-    position: relative;
-    height: 50px;
-    width: 150px;
-    margin: 0 auto;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background-color: $primary-color;
-
-      &::after {
-        font-size: rem(18);
-        color: $color-white;
-      }
-    }
-
-    .swiper-button-disabled {
-      border: 1px solid $primary-color;
-      background-color: $color-white;
-      opacity: 1;
-
-      &::after {
-        color: $primary-color;
-      }
-    }
   }
 }
 
 .about {
   padding-top: 250px;
+  padding-bottom: 120px;
 
   &__image {
       position: relative;
@@ -92,4 +53,81 @@
           margin-#{$right}: 20px
       }
   }
+}
+
+
+.program {
+    &__label {
+        width: 40%;
+    }
+
+    &__cards {
+        padding-top: 80px;
+    }
+
+    &__card {
+        text-align: center;
+
+        &__image {
+            width: 120px;
+            height: 120px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 1px solid $primary-color;
+            cursor: pointer;
+
+            &:hover {
+                // background-color: $primary-color;
+                fill: #fff;
+            }
+        }
+
+        &__label {
+
+        }
+    }
+
+    &__show-all {
+        padding-top: 50px;
+        text-align: #{$right};
+    }
+}
+
+.electronic-reading {
+    padding-top: 120px;
+    &__wrapper {
+        height: 500px;
+        background-image: url(../img/electronic-reading.png);
+        margin-#{$left}: auto;
+        position: relative;
+        #{$right}: -15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__content {
+        width: 42%;
+        margin: 0 auto;
+
+
+        & > [class^="heading"] {
+            color: $color-white;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 50%;
+        #{$left}: -20%;
+        transform: translateY(-50%);
+    }
+}
+
+
+.news {
+    padding-top: 120px;
 }

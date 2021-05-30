@@ -21,5 +21,14 @@ jQuery(document).ready(function ($) {
           prevEl: ".statistics__swiper .swiper-button-prev",
         },
       });
+
+      var ProgramSwiper = new Swiper(".program__swiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".program__controls .swiper-button-next",
+          prevEl: ".program__controls .swiper-button-prev",
+        },
+      });
 });    
 

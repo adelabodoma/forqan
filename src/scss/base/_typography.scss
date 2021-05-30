@@ -11,7 +11,24 @@
     line-height: 24px; 
 }
 
+.heading-3-grey {
+    font-size: rem(14);
+    color: $color-grey; 
+}
+
 .heading-5 {
     font-size: rem(16);
     color: $primary-color;
+}
+
+.heading-bold-1 {
+    font-size: rem(16);
+    font-family: $font-bold;
+    color: $color-dark;
+}
+
+.heading-bold-2 {
+    font-size: rem(14);
+    font-family: $font-bold;
+    color: $color-dark;
 }
