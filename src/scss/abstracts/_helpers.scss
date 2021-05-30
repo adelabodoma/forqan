@@ -27,6 +27,11 @@
   color: $color-white;
 }
 
+.utl-btn-secondary {
+  background-color: $color-light;
+  color: $color-grey;
+}
+
 .utl-share-button {
   width: 42px;
   height: 42px;
@@ -37,7 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   .icon {
     font-size: rem(18);
   }
@@ -60,4 +65,9 @@
   &:hover {
     color: $color-dark;
   }
+}
+
+.utl-form-label {
+  font-size: rem(14);
+  font-family: $font-bold;
 }

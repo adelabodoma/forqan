@@ -27,107 +27,183 @@
   padding-bottom: 120px;
 
   &__image {
-      position: relative;
+    position: relative;
 
-      &__img {
-          &--1 {
-              padding: 15px;
-              border: 1px solid $primary-color;
-              border-radius: 50%;
-
-          }
-
-          &--2 {
-              position: absolute;
-              #{$right}: 0;
-              top: 50%;
-              transform: translateY(-50%);
-          }
+    &__img {
+      &--1 {
+        padding: 15px;
+        border: 1px solid $primary-color;
+        border-radius: 50%;
       }
+
+      &--2 {
+        position: absolute;
+        #{$right}: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 
   &__buttons {
-      margin-top: 50px;
+    margin-top: 50px;
 
-      & > *:not(:last-child) {
-          margin-#{$right}: 20px
-      }
+    & > *:not(:last-child) {
+      margin-#{$right}: 20px;
+    }
   }
 }
 
-
 .program {
+  &__label {
+    width: 40%;
+  }
+
+  &__cards {
+    padding-top: 80px;
+  }
+
+  &__card {
+    text-align: center;
+
+    &__image {
+      width: 120px;
+      height: 120px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      border: 1px solid $primary-color;
+      cursor: pointer;
+
+      &:hover {
+        // background-color: $primary-color;
+        fill: #fff;
+      }
+    }
+
     &__label {
-        width: 40%;
     }
+  }
 
-    &__cards {
-        padding-top: 80px;
-    }
-
-    &__card {
-        text-align: center;
-
-        &__image {
-            width: 120px;
-            height: 120px;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 50%;
-            border: 1px solid $primary-color;
-            cursor: pointer;
-
-            &:hover {
-                // background-color: $primary-color;
-                fill: #fff;
-            }
-        }
-
-        &__label {
-
-        }
-    }
-
-    &__show-all {
-        padding-top: 50px;
-        text-align: #{$right};
-    }
+  &__show-all {
+    padding-top: 50px;
+    text-align: #{$right};
+  }
 }
 
 .electronic-reading {
-    padding-top: 120px;
-    &__wrapper {
-        height: 500px;
-        background-image: url(../img/electronic-reading.png);
-        margin-#{$left}: auto;
-        position: relative;
-        #{$right}: -15px;
+  padding-top: 120px;
+  &__wrapper {
+    height: 500px;
+    background-image: url(../img/electronic-reading.png);
+    margin-#{$left}: auto;
+    position: relative;
+    #{$right}: -15px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__content {
+    width: 42%;
+    margin: 0 auto;
+
+    & > [class^="heading"] {
+      color: $color-white;
     }
+  }
 
-    &__content {
-        width: 42%;
-        margin: 0 auto;
-
-
-        & > [class^="heading"] {
-            color: $color-white;
-        }
-    }
-
-    &__image {
-        position: absolute;
-        top: 50%;
-        #{$left}: -20%;
-        transform: translateY(-50%);
-    }
+  &__image {
+    position: absolute;
+    top: 50%;
+    #{$left}: -20%;
+    transform: translateY(-50%);
+  }
 }
 
-
 .news {
-    padding-top: 120px;
+  padding-top: 120px;
+}
+
+.digital-library {
+  margin-top: 120px;
+  padding-top: 100px;
+  height: 600px;
+  background-image: url(../img/digital-library.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    width: 40%;
+    margin: 0 auto;
+
+    .heading-1 {
+      color: $color-white;
+    }
+  }
+
+  &__buttons {
+    text-align: #{$right};
+    .btn:not(:last-child) {
+      margin-#{$right}: 10px;
+    }
+  }
+}
+
+.activities {
+  margin-top: 120px;
+  padding-top: 120px;
+  height: 475px;
+  background-image: url(../img/activities.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__card {
+      padding: 30px;
+  }
+  
+  &__content {
+    .heading-1 {
+      color: $color-white;
+    }
+  }
+}
+
+.testimonial {
+    padding-top: 350px; // testing
+
+    &__card {
+        box-shadow: 1px -5px 20px rgb(28 27 25 / 10%);
+        padding: 30px;
+
+        &__user {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+
+            &__data {
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                border-radius: 45px;
+                background-color: $color-light-grey-1;
+            }
+
+            &__rate {
+                color: #FFC107;
+                .icon {
+                    font-size: rem(18);
+
+                    &:not(:last-child) {
+                        margin-#{$left}: 5px;
+                    }
+                }
+            }
+        }
+
+    }
 }

@@ -30,5 +30,23 @@ jQuery(document).ready(function ($) {
           prevEl: ".program__controls .swiper-button-prev",
         },
       });
+
+      var activitiesSwiper = new Swiper(".activities__swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".activities__controls .swiper-button-next",
+          prevEl: ".activities__controls .swiper-button-prev",
+        },
+      });
+
+      var testimonialSwiper = new Swiper(".testimonial__swiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".testimonial__controls .swiper-button-next",
+          prevEl: ".testimonial__controls .swiper-button-prev",
+        },
+      });
 });    
 

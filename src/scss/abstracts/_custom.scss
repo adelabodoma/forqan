@@ -44,4 +44,8 @@ $btn-border-radius-lg: 30px;
 // //  FONT FAMILY
 $font-family-base: $font-regular !important;
 
+// FORM
+$form-group-margin-bottom: 30px;
+$input-height: 42px;
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
