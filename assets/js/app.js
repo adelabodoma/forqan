@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    var swiper = new Swiper(".header__swiper", {
+    const swiper = new Swiper(".header__swiper", {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
         },
       });
 
-      var statisticsSwiper = new Swiper(".statistics__swiper", {
+      const statisticsSwiper = new Swiper(".statistics__swiper", {
         slidesPerView: 4,
         spaceBetween: 30,
         navigation: {
@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
         },
       });
 
-      var ProgramSwiper = new Swiper(".program__swiper", {
+      const ProgramSwiper = new Swiper(".program__swiper", {
         slidesPerView: 4,
         spaceBetween: 30,
         navigation: {
@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
         },
       });
 
-      var activitiesSwiper = new Swiper(".activities__swiper", {
+      const activitiesSwiper = new Swiper(".activities__swiper", {
         slidesPerView: 3,
         spaceBetween: 30,
         navigation: {
@@ -40,12 +40,25 @@ jQuery(document).ready(function ($) {
         },
       });
 
-      var testimonialSwiper = new Swiper(".testimonial__swiper", {
+      const testimonialSwiper = new Swiper(".testimonial__swiper", {
         slidesPerView: 2,
         spaceBetween: 30,
         navigation: {
           nextEl: ".testimonial__controls .swiper-button-next",
           prevEl: ".testimonial__controls .swiper-button-prev",
+        },
+      });
+      
+      const twitterSwiper = new Swiper(".twitter-widget__swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".twitter-widget__controls .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".twitter-widget__controls .swiper-button-next",
+          prevEl: ".twitter-widget__controls .swiper-button-prev",
         },
       });
 });    

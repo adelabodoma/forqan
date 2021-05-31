@@ -213,3 +213,60 @@
     }
   }
 }
+
+.twitter-widget {
+  &__controls {
+    position: relative;
+    height: 50px;
+    margin-#{$left}: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-color: $color-white;
+      position: static;
+
+      &::after {
+        font-size: rem(18);
+        color: $primary-color;
+      }
+    }
+
+    .swiper-button-next {
+      margin-#{$left}: auto;
+      margin-#{$right}: 20px;
+    }
+
+    .swiper-button-disabled {
+      border: 1px solid $primary-color;
+      background-color: $color-white;
+      opacity: 1;
+
+      &::after {
+        color: $primary-color;
+      }
+    }
+  }
+  .swiper-pagination {
+    position: static;
+
+    span {
+      width: 20px;
+      height: 10px;
+      background-color: #8b7c80;
+      display: inline-block;
+      border-radius: 50px;
+      margin-#{$left}: 14.5px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $color-white;
+    }
+  }
+}

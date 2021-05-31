@@ -161,9 +161,9 @@
   background-size: cover;
 
   &__card {
-      padding: 30px;
+    padding: 30px;
   }
-  
+
   &__content {
     .heading-1 {
       color: $color-white;
@@ -172,38 +172,101 @@
 }
 
 .testimonial {
-    padding-top: 350px; // testing
+  padding-top: 350px; // testing
+
+  &__card {
+    box-shadow: 1px -5px 20px rgb(28 27 25 / 10%);
+    padding: 30px;
+
+    &__user {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+
+      &__data {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border-radius: 45px;
+        background-color: $color-light-grey-1;
+      }
+
+      &__rate {
+        color: #ffc107;
+        .icon {
+          font-size: rem(18);
+
+          &:not(:last-child) {
+            margin-#{$left}: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-app {
+  padding-top: 120px;
+  &__main-image {
+    width: 400px;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-#{$right}: 20px;
+    }
+  }
+
+  &__store {
+    margin-top: 50px;
+  }
+}
+
+.fast-links {
+  padding-top: 120px;
+
+  &__card {
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 1px -5px 20px rgb(28 27 25 / 10%);
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    &__image-container {
+        width: 80px;
+        height: 80px;
+        padding: 22px;
+        border-radius: 50%;
+        border: 1px solid $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        margin-#{$left}: 30px;
+    }
+  }
+}
+
+.twitter-widget {
+    padding-top: 120px;
+    background-image: url(../img/twitter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
 
     &__card {
-        box-shadow: 1px -5px 20px rgb(28 27 25 / 10%);
-        padding: 30px;
-
-        &__user {
-            display: flex;
-            align-items: center;
-            margin-top: 30px;
-
-            &__data {
-                display: flex;
-                flex: 1;
-                align-items: center;
-                justify-content: space-between;
-                padding: 20px;
-                border-radius: 45px;
-                background-color: $color-light-grey-1;
-            }
-
-            &__rate {
-                color: #FFC107;
-                .icon {
-                    font-size: rem(18);
-
-                    &:not(:last-child) {
-                        margin-#{$left}: 5px;
-                    }
-                }
-            }
-        }
-
+        padding: 40px;
+        border-radius: 50px 10px 50px 50px;
+        background-color: $color-white;
     }
 }
