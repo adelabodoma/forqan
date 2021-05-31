@@ -235,38 +235,75 @@
     cursor: pointer;
 
     &__image-container {
-        width: 80px;
-        height: 80px;
-        padding: 22px;
-        border-radius: 50%;
-        border: 1px solid $primary-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      width: 80px;
+      height: 80px;
+      padding: 22px;
+      border-radius: 50%;
+      border: 1px solid $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-
     &__info {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
     }
 
     &__content {
-        margin-#{$left}: 30px;
+      margin-#{$left}: 30px;
     }
   }
 }
 
 .twitter-widget {
-    padding-top: 120px;
-    background-image: url(../img/twitter-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
+  padding-top: 120px;
+  background-image: url(../img/twitter-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 
-    &__card {
-        padding: 40px;
-        border-radius: 50px 10px 50px 50px;
-        background-color: $color-white;
+  &__card {
+    padding: 40px;
+    border-radius: 50px 10px 50px 50px;
+    background-color: $color-white;
+  }
+}
+
+.footer {
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+
+  &__info {
+      margin-#{$left}: 40px;
+
+    & > [class^="heading"] {
+      color: $color-white;
+      margin-bottom: 20px;
     }
+
+    .heading-3 {
+        color: $color-grey;
+    }
+  }
+
+  &__list {
+      &__item {
+          margin-bottom: 20px;
+
+          &__link {
+              color: $color-white;
+          }
+      }
+  }
+
+  &__copy-rights {
+      padding-top: 40px;
+      margin-top: 40px;
+      border-top: 2px dashed #313131;
+      text-align: center;
+
+  }
 }
