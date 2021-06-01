@@ -10,10 +10,10 @@
 @import "abstracts/helpers";
 
 // COMPONENT
-@import "components/carousel", "components/social-links";
+@import "components/carousel", "components/social-links", "components/scroll";
 
 // PAGES
 @import "pages/home";
 
 // LAYOUT
-@import "layout/header";
+@import "layout/header", "layout/footer";
