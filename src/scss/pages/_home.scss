@@ -24,7 +24,7 @@
 
 .about {
   padding-top: 250px;
-  padding-bottom: 120px;
+  padding-bottom: $section-gap;
 
   &__image {
     position: relative;
@@ -80,8 +80,8 @@
     text-align: center;
 
     &__image {
-      width: 120px;
-      height: 120px;
+      width: $section-gap;
+      height: $section-gap;
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 50%;
@@ -105,7 +105,7 @@
 }
 
 .electronic-reading {
-  padding-top: 120px;
+  padding-top: $section-gap;
   &__wrapper {
     height: 500px;
     background-image: url(../img/electronic-reading.png);
@@ -138,11 +138,11 @@
 }
 
 .news {
-  padding-top: 120px;
+  padding-top: $section-gap;
 }
 
 .digital-library {
-  margin-top: 120px;
+  margin-top: $section-gap;
   padding-top: 80px;
   padding-bottom: 30px;
   background-image: url(../img/digital-library.png);
@@ -173,7 +173,7 @@
 }
 
 .media-center {
-  padding-top: 120px;
+  padding-top: $section-gap;
 
   &__tabs {
     &__items {
@@ -219,8 +219,8 @@
 }
 
 .activities {
-  margin-top: 120px;
-  padding-top: 120px;
+  margin-top: $section-gap;
+  padding-top: $section-gap;
   height: 475px;
   background-image: url(../img/activities.png);
   background-repeat: no-repeat;
@@ -274,7 +274,7 @@
 }
 
 .mobile-app {
-  padding-top: 120px;
+  padding-top: $section-gap;
   &__main-image {
     width: 400px;
   }
@@ -291,7 +291,7 @@
 }
 
 .fast-links {
-  padding-top: 120px;
+  padding-top: $section-gap;
 
   &__card {
     padding: 30px;
@@ -323,7 +323,7 @@
 }
 
 .twitter-widget {
-  padding-top: 120px;
+  padding-top: $section-gap;
   background-image: url(../img/twitter-bg.png);
   background-repeat: no-repeat;
   background-size: cover;

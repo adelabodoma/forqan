@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 // ABSTRACT
-@import "abstracts/variables", "abstracts/functions", "abstracts/custom";
+@import "abstracts/variables", "abstracts/functions", "abstracts/custom", "abstracts/mixins";
 
 // BASE
 @import "base/rest", "base/base", "base/fonts", "base/typography", "base/rest",
@@ -17,3 +17,4 @@
 
 // LAYOUT
 @import "layout/header", "layout/footer";
+
