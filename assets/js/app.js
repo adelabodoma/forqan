@@ -126,5 +126,16 @@ jQuery(document).ready(function ($) {
       prevEl: ".twitter-widget__controls .swiper-button-prev",
     },
   });
+
+
+  // SEARCH FUNCTIONALITY
+  $('#openSearchBtn').on('click', () => {
+    $('.header__nav__search').toggle();
+  })
+
+  $('#closeSearchBtn').on('click', () => {
+    $('.header__nav__search').toggle();
+  })
+
 });
 

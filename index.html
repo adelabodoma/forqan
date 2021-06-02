@@ -40,9 +40,17 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="header__top-nav__account">
-                            <a href="#" class="header__top-nav__account__change-lang utl-down-arrow icon"> ‏ تغيير
+                        <div class="header__top-nav__account dropdown">
+                            <a href="#" class="header__top-nav__account__change-lang utl-down-arrow icon" type="button"
+                                id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
+                                تغيير
                                 اللغة</a>
+                            <div class="dropdown-menu" aria-labelledby="changeLang">
+                                <!-- <img  class="header__top-nav__account__change-lang__image" src="assets/img/saudi-arabia.svg" alt="Language"> -->
+                                <!-- <img  class="header__top-nav__account__change-lang__image" src="assets/img/united-states.svg" alt="Language"> -->
+                                <a class="dropdown-item" href="#">عربي</a>
+                                <a class="dropdown-item" href="#">English</a>
+                            </div>
                             <span class="utl-separator"></span>
                             <a href="#">إنشاء حساب جديد</a>
                         </div>
@@ -72,10 +80,82 @@
                                 <a href="#" class="header__nav__item__link">عن المنصة</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link utl-down-arrow">البرامج التعليمية</a>
+                                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="program"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">البرامج
+                                    التعليمية</a>
+
+                                <ul class="dropdown-menu" aria-labelledby="program">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link utl-down-arrow">خدمات المنصة</a>
+                                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">خدمات المنصة</a>
+                                <ul class="dropdown-menu" aria-labelledby="program">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="header__nav__item">
                                 <a href="#" class="header__nav__item__link">المكتبة الرقمية</a>
@@ -84,7 +164,7 @@
                                 <a href="#" class="header__nav__item__link">تواصل معنا</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link"><i
+                                <a id="openSearchBtn" href="#" class="header__nav__item__link"><i
                                         class="icon icon-search header__nav__item__link--search"></i></a>
                             </li>
                         </ul>
@@ -94,6 +174,15 @@
                         <img src="assets/img/vision.png" alt="vision">
                     </div>
                 </div>
+            </div>
+            <div class="header__nav__search">
+                <form action="#" class="header__nav__search__form container">
+                    <input class="header__nav__search__form__input" type="text" placeholder="ابحث هنا">
+                    <button class="header__nav__search__form__submit">
+                        <i class="icon icon-search header__nav__item__link--search"></i>
+                    </button>
+                    <button class="header__nav__search__form__close-btn" id="closeSearchBtn">x</button>
+                </form>
             </div>
         </nav>
         <div class="header__main">
@@ -1087,6 +1176,7 @@
     <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
