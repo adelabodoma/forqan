@@ -71,3 +71,35 @@
   font-size: rem(14);
   font-family: $font-bold;
 }
+
+.utl-group-buttons {
+    margin-top: 50px;
+
+    & > *:not(:last-child) {
+      margin-#{$right}: 20px;
+    }
+
+    @include media-breakpoint-down(sm){
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+
+      & > *:not(:last-child) {
+        margin-#{$right}: 0;
+      }
+
+      & > * {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+}
+
+.utl-d-sm-none {
+  @include media-breakpoint-down(sm){
+    display: none;
+  }
+}

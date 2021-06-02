@@ -54,6 +54,14 @@ jQuery(document).ready(function ($) {
         slidesPerView: 4,
         spaceBetween: 20
       }
+    },
+    on: {
+      init: function() {
+        checkArrow('.program__controls');
+      },
+      resize: function () {
+        checkArrow('.program__controls');
+      }
     }
   });
 
@@ -85,6 +93,14 @@ jQuery(document).ready(function ($) {
         slidesPerView: 3,
         spaceBetween: 20
       },
+    },
+    on: {
+      init: function() {
+        checkArrow('.activities__controls');
+      },
+      resize: function () {
+        checkArrow('.activities__controls');
+      }
     }
   });
 
@@ -111,7 +127,15 @@ jQuery(document).ready(function ($) {
         slidesPerView: 2,
         spaceBetween: 20
       },
-    }
+    },
+    on: {
+      init: function() {
+        checkArrow('.testimonial__controls');
+      },
+      resize: function () {
+        checkArrow('.testimonial__controls');
+      }
+    } 
   });
 
   const twitterSwiper = new Swiper(".twitter-widget__swiper", {
@@ -125,6 +149,16 @@ jQuery(document).ready(function ($) {
       nextEl: ".twitter-widget__controls .swiper-button-next",
       prevEl: ".twitter-widget__controls .swiper-button-prev",
     },
+    on: {
+      init: function() {
+        checkArrow('.twitter-widget__controls .swiper-button-next');
+        checkArrow('.twitter-widget__controls .swiper-button-prev');
+      },
+      resize: function () {
+        checkArrow('.twitter-widget__controls .swiper-button-next');
+        checkArrow('.twitter-widget__controls .swiper-button-prev');
+      }
+    }
   });
 
 
@@ -138,4 +172,13 @@ jQuery(document).ready(function ($) {
   })
 
 });
+
+function checkArrow(className) {
+  var arrowsWrapper =  document.querySelector(className)
+  if ( window.innerWidth < 768  ) {
+    arrowsWrapper.style.display = 'none';
+  } else {
+    arrowsWrapper.style.display = 'block';
+  }
+}
 

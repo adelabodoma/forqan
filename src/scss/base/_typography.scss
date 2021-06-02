@@ -32,3 +32,13 @@
     font-family: $font-bold;
     color: $color-dark;
 }
+
+@include media-breakpoint-down(sm){
+    .heading-1 {
+        font-size: rem(25);
+    }
+
+    .heading-5 {
+        font-size: rem(15);
+    }
+  }

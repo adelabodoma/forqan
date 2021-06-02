@@ -34,9 +34,9 @@
         padding: 15px;
         border: 1px solid $primary-color;
         border-radius: 50%;
-        @include media-breakpoint-down(md) { 
-         width: 100%;
-         }
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
       }
 
       &--2 {
@@ -44,25 +44,17 @@
         #{$right}: 0;
         top: 50%;
         transform: translateY(-50%);
-        @include media-breakpoint-down(md) { 
+        @include media-breakpoint-down(md) {
           display: none;
-         }
+        }
       }
     }
 
     &__container {
-      @include media-breakpoint-down(md) { 
+      @include media-breakpoint-down(md) {
         display: flex;
         align-items: center;
-       }
-    }
-  }
-
-  &__buttons {
-    margin-top: 50px;
-
-    & > *:not(:last-child) {
-      margin-#{$right}: 20px;
+      }
     }
   }
 }
@@ -70,6 +62,9 @@
 .program {
   &__label {
     width: 40%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
   }
 
   &__cards {
@@ -122,6 +117,9 @@
   &__content {
     width: 42%;
     margin: 0 auto;
+    @include media-breakpoint-down(sm) {
+      width: 80%;
+    }
 
     & > [class^="heading"] {
       color: $color-white;
@@ -139,6 +137,12 @@
 
 .news {
   padding-top: $section-gap;
+
+  &__card {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .digital-library {
@@ -152,12 +156,12 @@
   &__content {
     width: 90%;
     margin: 0 auto;
-    @include media-breakpoint-up(md) { 
+    @include media-breakpoint-up(md) {
       width: 80%;
-     }
-     @include media-breakpoint-up(xl) { 
+    }
+    @include media-breakpoint-up(xl) {
       width: 40%;
-     }
+    }
 
     .heading-1 {
       color: $color-white;
@@ -208,8 +212,8 @@
   }
 
   &__grid-item {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
     &--2 {
       grid-row-start: 1;
       grid-row-end: span 2;
@@ -270,6 +274,27 @@
         }
       }
     }
+    &::before {
+      font-family: "icomoon" !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      font-size: 7px;
+      margin-#{$left}: 5.2px;
+      -moz-osx-font-smoothing: grayscale;
+      content: $icon-qoute;
+      font-size: rem(60);
+      color: #f1f1f1;
+      position: absolute;
+      left: 30px;
+      top: 31%;
+      z-index: -1;
+    }
   }
 }
 
@@ -277,6 +302,10 @@
   padding-top: $section-gap;
   &__main-image {
     width: 400px;
+    @include media-breakpoint-down(sm) {
+      width: 200px;
+      margin-bottom: 20px;
+    }
   }
 
   &__link {
@@ -335,4 +364,3 @@
     background-color: $color-white;
   }
 }
-
