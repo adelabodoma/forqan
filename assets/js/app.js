@@ -57,10 +57,10 @@ jQuery(document).ready(function ($) {
     },
     on: {
       init: function () {
-        checkArrow('.program__controls');
+        // checkArrow('.program__controls');
       },
       resize: function () {
-        checkArrow('.program__controls');
+        // checkArrow('.program__controls');
       }
     }
   });
@@ -96,10 +96,10 @@ jQuery(document).ready(function ($) {
     },
     on: {
       init: function () {
-        checkArrow('.activities__controls');
+        // checkArrow('.activities__controls');
       },
       resize: function () {
-        checkArrow('.activities__controls');
+        // checkArrow('.activities__controls');
       }
     }
   });
@@ -130,11 +130,20 @@ jQuery(document).ready(function ($) {
     },
     on: {
       init: function () {
-        checkArrow('.testimonial__controls');
+        // checkArrow('.testimonial__controls');
       },
       resize: function () {
-        checkArrow('.testimonial__controls');
+        // checkArrow('.testimonial__controls');
       }
+    }
+  });
+
+  const mediaSwiper = new Swiper(".media-center__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".media-center__controls .swiper-button-next",
+      prevEl: ".media-center__controls .swiper-button-prev",
     }
   });
 
@@ -151,10 +160,10 @@ jQuery(document).ready(function ($) {
     },
     on: {
       init: function () {
-        checkArrow('.twitter-widget__controls', 'flex');
+        // checkArrow('.twitter-widget__controls', 'flex');
       },
       resize: function () {
-        checkArrow('.twitter-widget__controls', 'flex');
+        // checkArrow('.twitter-widget__controls', 'flex');
       }
     }
   });
@@ -202,7 +211,7 @@ jQuery(document).ready(function ($) {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
-  
+
 });
 
 

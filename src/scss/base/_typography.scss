@@ -36,9 +36,10 @@
 @include media-breakpoint-down(sm){
     .heading-1 {
         font-size: rem(25);
+        margin-bottom: 10px;
     }
 
     .heading-5 {
-        font-size: rem(15);
+        font-size: rem(12);
     }
   }
