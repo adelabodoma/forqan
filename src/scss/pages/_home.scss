@@ -118,6 +118,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    a.utl-link:hover {
+      color: $color-white!important;
+    }
   }
 
   &__content {
@@ -149,6 +153,7 @@
     @include media-breakpoint-down(sm) {
       margin-bottom: 20px;
     }
+    @extend .utl-card-hover;
   }
 }
 
@@ -210,6 +215,12 @@
           color: $color-dark;
         }
       }
+
+      &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -218,6 +229,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px 30px;
+
+    @include media-breakpoint-down(sm){
+      gap: 10px;
+    }
   }
 
   &__grid-item {

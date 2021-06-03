@@ -159,9 +159,20 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
+  function checkArrow(className, display = "block") {
+    var arrowsWrapper = document.querySelector(className)
+    if (window.innerWidth < 768) {
+      arrowsWrapper.style.display = 'none';
+    } else {
+      arrowsWrapper.style.display = display;
+    }
+  }
+
   // REMOVE SPINNER
   setTimeout(() => {
-    $('.loader').fadeOut('slow')
+    $('.loader').fadeOut('slow');
+    window.scrollTop()
   }, 1000)
 
 
@@ -174,14 +185,27 @@ jQuery(document).ready(function ($) {
     $('.header__nav__search').toggle();
   })
 
+  const topButton = document.getElementById("gotToTopButton");
+  topButton.addEventListener('click', topFunction)
+
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topButton.style.display = "block";
+    } else {
+      topButton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  
 });
 
-function checkArrow(className, display = "block") {
-  var arrowsWrapper = document.querySelector(className)
-  if (window.innerWidth < 768) {
-    arrowsWrapper.style.display = 'none';
-  } else {
-    arrowsWrapper.style.display = display;
-  }
-}
+
+
+
 

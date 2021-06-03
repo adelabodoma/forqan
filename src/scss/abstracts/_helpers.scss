@@ -61,6 +61,7 @@
   font-family: $font-bold;
   font-size: rem(14);
   color: $primary-color;
+  transition: $transition-type;
 
   &:hover {
     color: $color-dark;
@@ -102,6 +103,16 @@
   transition: $transition-type;
   &:hover {
     color: $primary-color;
+  }
+}
+
+.utl-card-hover {
+  transition: $transition-type;
+  padding-top: 5px;
+  &:hover {
+    cursor: pointer;
+    // padding-top: 5px;
+    transform: translateY(-5px);
   }
 }
 
