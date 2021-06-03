@@ -56,7 +56,7 @@ jQuery(document).ready(function ($) {
       }
     },
     on: {
-      init: function() {
+      init: function () {
         checkArrow('.program__controls');
       },
       resize: function () {
@@ -95,7 +95,7 @@ jQuery(document).ready(function ($) {
       },
     },
     on: {
-      init: function() {
+      init: function () {
         checkArrow('.activities__controls');
       },
       resize: function () {
@@ -129,13 +129,13 @@ jQuery(document).ready(function ($) {
       },
     },
     on: {
-      init: function() {
+      init: function () {
         checkArrow('.testimonial__controls');
       },
       resize: function () {
         checkArrow('.testimonial__controls');
       }
-    } 
+    }
   });
 
   const twitterSwiper = new Swiper(".twitter-widget__swiper", {
@@ -150,16 +150,19 @@ jQuery(document).ready(function ($) {
       prevEl: ".twitter-widget__controls .swiper-button-prev",
     },
     on: {
-      init: function() {
-        checkArrow('.twitter-widget__controls .swiper-button-next');
-        checkArrow('.twitter-widget__controls .swiper-button-prev');
+      init: function () {
+        checkArrow('.twitter-widget__controls', 'flex');
       },
       resize: function () {
-        checkArrow('.twitter-widget__controls .swiper-button-next');
-        checkArrow('.twitter-widget__controls .swiper-button-prev');
+        checkArrow('.twitter-widget__controls', 'flex');
       }
     }
   });
+
+  // REMOVE SPINNER
+  setTimeout(() => {
+    $('.loader').fadeOut('slow')
+  }, 1000)
 
 
   // SEARCH FUNCTIONALITY
@@ -173,12 +176,12 @@ jQuery(document).ready(function ($) {
 
 });
 
-function checkArrow(className) {
-  var arrowsWrapper =  document.querySelector(className)
-  if ( window.innerWidth < 768  ) {
+function checkArrow(className, display = "block") {
+  var arrowsWrapper = document.querySelector(className)
+  if (window.innerWidth < 768) {
     arrowsWrapper.style.display = 'none';
   } else {
-    arrowsWrapper.style.display = 'block';
+    arrowsWrapper.style.display = display;
   }
 }
 

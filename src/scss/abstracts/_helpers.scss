@@ -98,6 +98,13 @@
     }
 }
 
+.utl-hover-primary {
+  transition: $transition-type;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
 .utl-d-sm-none {
   @include media-breakpoint-down(sm){
     display: none;
