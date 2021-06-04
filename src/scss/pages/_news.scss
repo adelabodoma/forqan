@@ -1,5 +1,7 @@
 .news-container {
     &__card {
         margin-bottom: 30px;
+        @extend .utl-card-hover;
+        padding-top: 0;
     }
 }
