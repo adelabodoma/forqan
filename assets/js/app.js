@@ -20,6 +20,28 @@ jQuery(document).ready(function ($) {
       nextEl: ".statistics__swiper .swiper-button-next",
       prevEl: ".statistics__swiper .swiper-button-prev",
     },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      },
+    },
   });
 
   const ProgramSwiper = new Swiper(".program__swiper", {
@@ -181,7 +203,6 @@ jQuery(document).ready(function ($) {
   // REMOVE SPINNER
   setTimeout(() => {
     $('.loader').fadeOut('slow');
-    window.scrollTop()
   }, 1000)
 
 
@@ -195,6 +216,7 @@ jQuery(document).ready(function ($) {
   })
 
   const topButton = document.getElementById("gotToTopButton");
+  const headerNav = document.querySelector(".header__mobile-nav");
   topButton.addEventListener('click', topFunction)
 
   window.onscroll = function () { scrollFunction() };
@@ -202,8 +224,10 @@ jQuery(document).ready(function ($) {
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       topButton.style.display = "block";
+      headerNav.style.top = '0px';
     } else {
       topButton.style.display = "none";
+      headerNav.style.top = '60px';
     }
   }
 
@@ -212,9 +236,39 @@ jQuery(document).ready(function ($) {
     document.documentElement.scrollTop = 0;
   }
 
+  mobileMenuRender()
+
 });
 
 
+function mobileMenuRender() {
+  const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'))
+  const backLink = `<li class="nav-item">
+	<a class="nav-link nav-back-link" href="javascript:;">
+		رجوع
+	</a>
+</li>`
 
+  navExpand.forEach(item => {
+    item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink)
+    item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'))
+    item.querySelector('.nav-back-link').addEventListener('click', () => item.classList.remove('active'))
+  })
+
+
+  // ---------------------------------------
+  // not-so-important stuff starts here
+
+  const openMenuBtn = document.getElementById('openMenu');
+  const closeMenuBtn = document.getElementById('closeMenu');
+
+  openMenuBtn.addEventListener('click', function () {
+    $('.header__mobile').fadeIn('slow')
+  })
+
+  closeMenuBtn.addEventListener('click', function () {
+    $('.header__mobile').fadeOut('slow')
+  })
+}
 
 

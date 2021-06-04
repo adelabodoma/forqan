@@ -28,7 +28,7 @@
         <div class="header__top-nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-7 d-flex align-items-center">
+                    <div class="col-7 align-items-center d-none d-xl-flex">
                         <ul class="social-links">
                             <li class="social-links__item">
                                 <a href="#" class="social-links__item__link">
@@ -66,7 +66,7 @@
                             <a href="#">إنشاء حساب جديد</a>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-lg-12 col-xl-5">
                         <div class="header__top-nav__current-date">
                             <span>‏ الأربعاء 19 مايو 2021</span>
                             <span class="utl-separator"></span>
@@ -196,6 +196,31 @@
                 </form>
             </div>
         </nav>
+        <div class="header__mobile-nav">
+            <div class="container header__mobile-nav__container d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                    <a href="#" class="header__mobile-nav__logo">
+                        <img src="assets/img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="header__mobile-nav__account" type="button" id="changeLang" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> ‏
+                        <i class="icon icon-user"></i>
+                    </a>
+                    <div class="dropdown-menu header__mobile-nav__account-dropdown" aria-labelledby="changeLang">
+                        <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
+                        <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
+                    </div>
+                    <a href="#">
+                        <img src="assets/img/vision.png" alt="vision" class="header__mobile-nav__vision">
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="header__main">
             <div class="swiper-container header__swiper">
                 <div class="swiper-wrapper">
@@ -227,10 +252,140 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="header__controls d-none d-lg-block">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
                 <div class="swiper-pagination"></div>
             </div>
+        </div>
+
+        <div class="header__mobile">
+            <nav class="nav-drill">
+                <a href="#" id="closeMenu">x</a>
+                <ul class="nav-items nav-level-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            عن المنصة
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            خدمات المنصة
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            البرامج
+                            التعليمية
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            المكتبة الرقمية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            تواصل معنا
+                        </a>
+                    </li>
+                    <a href="#" class="header__mobile__change-lang utl-down-arrow mt-5 mx-3" type="button"
+                        id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
+                        تغيير
+                        اللغة</a>
+                    <div class="dropdown-menu" aria-labelledby="changeLang">
+                        <a class="dropdown-item" href="#">عربي</a>
+                        <a class="dropdown-item" href="#">English</a>
+                    </div>
+                    <ul class="social-links mt-5 mx-3">
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="#" class="social-links__item__link">
+                                <i class="icon icon-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+
         </div>
     </header>
     <!-- HEADER SECTION END -->
