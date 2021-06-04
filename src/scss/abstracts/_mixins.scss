@@ -9,3 +9,19 @@
     #{$property}: $value;
   }
 }
+
+
+@mixin addIcon($name, $font-size) {
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  font-size: $font-size;
+  -moz-osx-font-smoothing: grayscale;
+  content: $name;
+}

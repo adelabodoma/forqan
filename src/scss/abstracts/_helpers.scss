@@ -74,29 +74,29 @@
 }
 
 .utl-group-buttons {
-    margin-top: 50px;
+  margin-top: 50px;
+
+  & > *:not(:last-child) {
+    margin-#{$right}: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 
     & > *:not(:last-child) {
-      margin-#{$right}: 20px;
+      margin-#{$right}: 0;
     }
 
-    @include media-breakpoint-down(sm){
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-
-      & > *:not(:last-child) {
-        margin-#{$right}: 0;
-      }
-
-      & > * {
-        width: 100%;
-        margin-bottom: 10px;
-      }
+    & > * {
+      width: 100%;
+      margin-bottom: 10px;
     }
+  }
 }
 
 .utl-hover-primary {
@@ -117,7 +117,40 @@
 }
 
 .utl-d-sm-none {
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     display: none;
   }
+}
+
+.utl-sort-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  input {
+    margin-#{$right}: 30px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm){
+      flex-direction: column;
+      
+      @at-root .heading-2 {
+        margin-bottom: 15px!important;
+      }
+
+      .form-input-search {
+        margin-#{$right}: 0!important;
+        margin-bottom: 30px;
+      }
+
+    }
+  }
+}
+
+.utl-padding-scroll {
+  padding-bottom: 85px;
 }
