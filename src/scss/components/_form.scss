@@ -6,16 +6,26 @@
   background-image: url(../img/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: 18px;
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 25%);
+  }
 }
 
 .form-input {
   background-color: $color-light-grey-2;
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 25%);
+  }
 }
 
 .form-input-search {
-    position: relative;
-    width: 100%;
-    margin-#{$right}: 30px;
+  position: relative;
+  width: 100%;
+  margin-#{$right}: 30px;
 
   &::before {
     font-family: "icomoon" !important;
