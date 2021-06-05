@@ -1,0 +1,90 @@
+.education {
+  &__item {
+    margin-bottom: 50px;
+
+    &__header {
+      margin-bottom: 30px;
+      @include media-breakpoint-down(sm){
+        .btn {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  &__card {
+    &__registered-users {
+      display: flex;
+      align-items: center;
+      &__images {
+        margin-left: 15px;
+        position: relative;
+        min-width: 100px;
+        min-height: 40px;
+
+        img {
+          position: absolute;
+          top: 0;
+
+          &:nth-child(1) {
+            right: 0;
+          }
+          &:nth-child(2) {
+            right: 30%;
+          }
+          &:nth-child(3) {
+            right: 60%;
+          }
+        }
+      }
+
+      &__heading {
+        font-size: 18px;
+        color: #6c6761;
+      }
+    }
+
+    &__progress {
+      margin-top: 30px;
+      
+      &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 50px;
+      }
+
+      &__heading {
+        margin-bottom: 10px;
+      }
+
+      &__label {
+        font-size: 20px;
+        color: #6c6761;
+      }
+
+      &__progress-item {
+        width: 100%;
+        margin-left: 30px;
+        border-radius: 20px;
+        height: 10px;
+        &::-webkit-progress-bar {
+          background-color: $color-light-grey-3;
+          border-radius: 10px;
+        }
+
+        &::-webkit-progress-value {
+          background-color: $primary-color;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    &__text {
+      line-height: 24px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
