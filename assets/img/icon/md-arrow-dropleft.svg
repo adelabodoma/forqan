@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108.097" height="126.193" viewBox="0 0 108.097 126.193">
+  <defs>
+    <filter id="md-arrow-dropleft" x="0" y="0" width="108.097" height="126.193" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#1c1b19" flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#md-arrow-dropleft)">
+    <path id="md-arrow-dropleft-2" data-name="md-arrow-dropleft" d="M13.5,9,31.6,27.1l-18.1,18.1Z" transform="translate(26.5 26)" fill="#bf9f35"/>
+  </g>
+</svg>

@@ -48,6 +48,14 @@ $font-family-base: $font-regular !important;
 $form-group-margin-bottom: 30px;
 $input-height: 42px;
 
+// CARD
+$card-border-width: 0;
+$card-border-color: transparent;
+
+.card {
+  box-shadow: $main-box-shadow;
+}
+
 // DROP DOWN
 $dropdown-spacer: 1rem;
 $dropdown-min-width: 15rem;
