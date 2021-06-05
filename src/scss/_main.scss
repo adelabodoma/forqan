@@ -13,10 +13,10 @@
 // COMPONENT
 @import "components/carousel", "components/social-links", "components/scroll",
   "components/dropdown", "components/spinner", "components/mobile-menu",
-  "components/form", "components/breadcrumb", "components/pagination", "components/card";
+  "components/form", "components/breadcrumb", "components/pagination", "components/card", "components/table";
 
 // PAGES
-@import "pages/home", "pages/news";
+@import "pages/home", "pages/news", "pages/library";
 
 // LAYOUT
 @import "layout/header", "layout/footer";

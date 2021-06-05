@@ -219,29 +219,48 @@ jQuery(document).ready(function ($) {
   const headerNav = document.querySelector(".header__mobile-nav");
   topButton.addEventListener('click', topFunction)
 
-  window.onscroll = function () { scrollFunction() };
+  window.onscroll = function () { scrollFunction(topButton, headerNav) };
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      topButton.style.display = "block";
-      headerNav.style.top = '0px';
+  mobileNavMenuRender();
+
+
+
+
+  let isAdvancedSearchOpened = false;
+  $('#advancedSearch').on('click', (e) => {
+    e.preventDefault();
+    isAdvancedSearchOpened = !isAdvancedSearchOpened;
+
+    
+    if (isAdvancedSearchOpened) {
+      e.target.innerHTML = '- بحث عادي';
+      $('#advancedSearchContainer').fadeIn('slow');
     } else {
-      topButton.style.display = "none";
-      headerNav.style.top = '60px';
+      e.target.innerHTML = '+ بحث متقدم';
+      $('#advancedSearchContainer').fadeOut('slow');
     }
-  }
+  })
 
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-
-  mobileMenuRender()
 
 });
 
 
-function mobileMenuRender() {
+function scrollFunction(topButton, headerNav) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+    headerNav.style.top = '0px';
+  } else {
+    topButton.style.display = "none";
+    headerNav.style.top = '60px';
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function mobileNavMenuRender() {
   const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'))
   const backLink = `<li class="nav-item">
 	<a class="nav-link nav-back-link" href="javascript:;">

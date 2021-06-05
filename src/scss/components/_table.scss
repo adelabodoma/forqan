@@ -1,0 +1,41 @@
+.utl-table {
+  width: 100%;
+  min-width: 600px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  background-color: transparent;
+
+  thead {
+    background-color: $color-light-grey-2;
+    border-radius: 10px;
+
+    th {
+      padding: 23px 40px;
+      font-size: rem(14);
+      text-align: center;
+      color: $color-dark;
+      font-family: $font-bold;
+    }
+  }
+
+  tbody {
+    td {
+      padding: 23px 40px;
+      font-size: rem(14);
+      text-align: center;
+      color: $color-dark;
+
+      a {
+          color: #E3B472;
+      }
+    }
+  }
+
+  &--striped {
+    tbody {
+      tr:nth-of-type(even) {
+        background-color: $color-light-grey-2;
+      }
+    }
+  }
+}
