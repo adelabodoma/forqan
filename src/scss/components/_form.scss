@@ -3,22 +3,28 @@
   -moz-appearance: none; /* Firefox */
   -webkit-appearance: none; /* Safari and Chrome */
   appearance: none;
-  background-image: url(../img/arrow-down.svg);
+  background-image: url(../img/icon/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: 18px;
+  border: 1px solid transparent;
+  border-radius: 6px;
 
   &:focus {
-    border-color: $primary-color;
-    box-shadow: 0 0 0 0.2rem rgba($primary-color, 25%);
+    border-color: transparent;
+    box-shadow: 0 0 0 2px rgba($primary-color, 25%);
   }
 }
 
 .form-input {
   background-color: $color-light-grey-2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
 
   &:focus {
-    border-color: $primary-color;
-    box-shadow: 0 0 0 0.2rem rgba($primary-color, 25%);
+    border-color: transparent;
+    box-shadow: 0 0 0 2px rgba($primary-color, 25%);
   }
 }
 
@@ -53,6 +59,6 @@
     top: 0;
     z-index: 99;
     cursor: pointer;
-    border: 1px solid $color-light-grey-3;
+    border: 1px solid transparent;
   }
 }
