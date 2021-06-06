@@ -151,6 +151,10 @@
           bottom: -50%;
           z-index: 99;
 
+          @include media-breakpoint-down(sm){
+            top: 10%;
+          }
+
           &__body {
             padding: 40px;
             display: flex;
@@ -164,12 +168,60 @@
             &-progress {
               flex: 2;
             }
+
+            @include media-breakpoint-down(sm){
+              flex-direction: column;
+              &-info,  &-progress {
+                flex: 1;
+                width: 100%;
+              }
+            }
           }
         }
       }
 
       &__content {
         padding-top: 100px;
+        &__show-all-btn {
+          @include media-breakpoint-down(sm){
+           margin-top: 10px;
+          }
+        }
+
+      }
+
+      .education__item .card{
+        margin-bottom: 30px;
+      }
+    }
+
+    &__lecture-details {
+      .education__card  {
+        margin-top: 40px;
+      }
+
+      .education__card__image img {
+        height: 300px;
+        margin-bottom: 20px;
+      }
+
+      @include media-breakpoint-down(sm){
+       & .education__card__lecture-time {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__program-elements {
+    &__card {
+      text-align: center;
+      margin-bottom: 30px;
+
+      .icon {
+        font-size: 40px;
+        display: block;
+        margin-bottom: 5px;
       }
     }
   }

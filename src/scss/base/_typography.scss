@@ -24,6 +24,13 @@
     font-family: $font-bold;
 }
 
+.heading-3-bold {
+    font-size: rem(18);
+    color: $color-dark; 
+    font-family: $font-bold;
+    margin-bottom: 20px;
+}
+
 .heading-3-grey {
     font-size: rem(14);
     color: $color-grey; 

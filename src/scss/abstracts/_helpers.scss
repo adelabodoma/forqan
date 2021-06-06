@@ -73,6 +73,17 @@
   font-family: $font-bold;
 }
 
+.utl-form-label-dark {
+  font-size: rem(14);
+  font-family: $font-bold;
+  color: $color-dark;
+  margin-bottom: 10px;
+}
+
+.utl-no-border {
+  border: unset;
+}
+
 .utl-group-buttons {
   margin-top: 50px;
 
@@ -153,4 +164,10 @@
 
 .utl-padding-scroll {
   padding-bottom: 85px;
+}
+
+.utl-no-hover {
+  &:hover {
+    transform: unset;
+  }
 }
