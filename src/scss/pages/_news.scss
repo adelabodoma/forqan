@@ -3,6 +3,29 @@
     margin-bottom: 30px;
     @extend .utl-card-hover;
     padding-top: 0;
+
+    &__time {
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      padding: 12px 30px;
+      background-color: $color-white;
+      bottom: -30px;
+      width: 150px;
+      margin: 0 auto;
+      transform: translateY(-50%);
+      box-shadow: $main-box-shadow;
+
+      .icon {
+        color: $primary-color;
+        font-size: rem(18);
+        margin-#{$right}: 5px;
+      }
+
+      h3 {
+        font-size: rem(14);
+      }
+    }
   }
 
 }

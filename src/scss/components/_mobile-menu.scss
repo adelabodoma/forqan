@@ -1,6 +1,4 @@
 //https://codepen.io/tiffachoo/pen/yzZRXK
-@import "https://fonts.googleapis.com/css?family=Fira+Sans:300,400";
-@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
 $black: #252525;
 $white: #fff;
@@ -60,9 +58,9 @@ $nav-width: 100%;
 $nav-padding: 0.875em 1em;
 $nav-border-color: $color-light-grey;
 $nav-background-color: $secondary-color;
-$nav-icon-font: "Material Icons";
-$nav-icon-arrow-right: "chevron_right";
-$nav-icon-arrow-left: "chevron_left";
+$nav-icon-font: "icomoon";
+$nav-icon-arrow-right: $icon-right-arrow;
+$nav-icon-arrow-left: $icon-left-arrow;
 
 $nav-level-border-color: $primary-color;
 $nav-level-background-color: $primary-color-tint-5;
@@ -137,9 +135,8 @@ $nav-level5-background-color: $primary-color-tint-2;
             color: $white;
     
             &::before {
-              content: $nav-icon-arrow-right;
-              margin-right: 0.5em;
-              font-family: $nav-icon-font;
+            @include addIcon($nav-icon-arrow-right, 15px);
+              margin-left: 0.5em;
             }
           }
         }
@@ -147,11 +144,9 @@ $nav-level5-background-color: $primary-color-tint-2;
         &-link {
           display: flex;
           justify-content: space-between;
-    
+          
           &::after {
-            content: $nav-icon-arrow-left;
-            flex: 0 1 auto;
-            font-family: $nav-icon-font;
+            @include addIcon($nav-icon-arrow-left, 15px);
           }
         }
     
