@@ -359,7 +359,7 @@
                     <a class="breadcrumb__link" href="#">الرئيسية</a>
                 </li>
                 <li class="breadcrumb__item">
-                    <a class="breadcrumb__link" href="#">البرامج التعليمية</a>
+                    <a class="breadcrumb__link" href="#">البرامج التعليمية المشترك فيها</a>
                 </li>
             </div>
         </div>
@@ -371,19 +371,23 @@
         <div class="container">
             <div class="row utl-sort-section">
                 <div class="col-md-5">
-                    <h2 class="heading-2 mb-0">البرامج التعليمية </h2>
+                    <h2 class="heading-2 mb-0"> البرامج التعليمية المشترك فيها</h2>
+                </div>
+                <div class="col-md-7">
+                    <form action="" class="utl-sort-section__form">
+                        <div class="form-input-search">
+                            <input type="text" placeholder="كلمة البحث" class="form-control form-input">
+                        </div>
+                        <select name="sort" id="sort" class="form-control form-select">
+                            <option value="1">ترتيب بواسطة</option>
+                            <option value="1">الاسم</option>
+                            <option value="1">العنوان</option>
+                            <option value="1">التاريخ</option>
+                        </select>
+                    </form>
                 </div>
             </div>
             <div class="education__item">
-                <div class="row education__item__header">
-                    <div class="col-md-10">
-                        <h2 class="heading-2-grey">البرامج التعليمية المشترك بها</h2>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn utl-btn-outline-primary">عرض الجميع</button>
-                    </div>
-                </div>
-
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card education__card">
@@ -487,15 +491,6 @@
                 </div>
             </div>
             <div class="education__item">
-                <div class="row education__item__header">
-                    <div class="col-md-10">
-                        <h2 class="heading-2-grey">البرامج التعليمية المشترك بها</h2>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn utl-btn-outline-primary">عرض الجميع</button>
-                    </div>
-                </div>
-
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card education__card">
@@ -599,15 +594,6 @@
                 </div>
             </div>
             <div class="education__item">
-                <div class="row education__item__header">
-                    <div class="col-md-10">
-                        <h2 class="heading-2-grey">البرامج التعليمية المشترك بها</h2>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn utl-btn-outline-primary">عرض الجميع</button>
-                    </div>
-                </div>
-
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card education__card">
@@ -710,7 +696,26 @@
                     </div>
                 </div>
             </div>
-
+            
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-items">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <i class="icon icon-right-arrow"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <i class="icon icon-left-arrow"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </main>
     <!-- MAIN SECTION END -->
