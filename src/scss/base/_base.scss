@@ -11,6 +11,9 @@ body {
 
 body {
   &.backdrop {
+	  height: 100vh;
+	  overflow: hidden;
+	  width: 100%;
     &::before {
       content: "";
       position: fixed;
