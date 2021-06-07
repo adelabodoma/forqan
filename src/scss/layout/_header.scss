@@ -92,11 +92,12 @@
     }
 
     &__search {
-      background-color: #fff;
+      background-color: $color-white;
       margin-top: 20px;
       position: relative;
       bottom: -25px;
       display: none;
+      z-index: 9999;
 
       &__form {
         display: flex;
@@ -199,6 +200,12 @@
         text-align: #{$left};
         margin-bottom: 10px;
       }
+    }
+
+    &__search-button {
+      font-size: rem(18);
+      color: $primary-color;
+      margin-left: 15px;
     }
   }
 

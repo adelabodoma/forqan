@@ -209,10 +209,21 @@ jQuery(document).ready(function ($) {
   // SEARCH FUNCTIONALITY
   $('#openSearchBtn').on('click', () => {
     $('.header__nav__search').toggle();
+    $('body').addClass('backdrop');
+  })
+
+  $('#openSearchBtnWithMobile').on('click', () => {
+    topFunction()
+    $('.header__nav').show();
+    $('.header__nav__search').show().css('bottom', '-85px');;
+    $('.header__nav > .container').hide();
+
+    $('body').addClass('backdrop');
   })
 
   $('#closeSearchBtn').on('click', () => {
     $('.header__nav__search').toggle();
+    $('body').removeClass('backdrop');
   })
 
   const topButton = document.getElementById("gotToTopButton");
@@ -224,14 +235,12 @@ jQuery(document).ready(function ($) {
   mobileNavMenuRender();
 
 
-
-
   let isAdvancedSearchOpened = false;
   $('#advancedSearch').on('click', (e) => {
     e.preventDefault();
     isAdvancedSearchOpened = !isAdvancedSearchOpened;
 
-    
+
     if (isAdvancedSearchOpened) {
       e.target.innerHTML = '- بحث عادي';
       $('#advancedSearchContainer').fadeIn('slow');
@@ -240,7 +249,6 @@ jQuery(document).ready(function ($) {
       $('#advancedSearchContainer').fadeOut('slow');
     }
   })
-
 
 });
 
