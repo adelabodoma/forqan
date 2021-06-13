@@ -35,6 +35,18 @@
   // padding-top: 250px;
   // @include gap(padding-top, 250px);
   // @include gap(padding-bottom, 120px);
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url(../img/water-mark-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -345px;
+    top: 0;
+    width: 690px;
+    height: 1065px;
+  }
 
   &__image {
     position: relative;
@@ -76,12 +88,19 @@
   @include media-breakpoint-up(xs) {
     padding-top: 340px;
   }
+
   @media screen and(max-height: 400px) {
     padding-top: 50px;
+  }
+
+  @media screen and(max-height: 768px) {
+    padding: 50px 0;
   }
 }
 
 .program {
+  padding-top: 80px;
+  
   &__label {
     width: 40%;
     @include media-breakpoint-down(sm) {
@@ -172,6 +191,18 @@
 .news {
   // padding-top: var(--section-gap);;
   @include gap(padding-top, 120px);
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url(../img/water-mark-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 900px;
+  }
 
   &__card {
     @include media-breakpoint-down(sm) {
@@ -327,6 +358,7 @@
     padding: 30px;
     box-shadow: $main-box-shadow;
     border-radius: 10px;
+    background-color: $color-white;
     @include media-breakpoint-down(sm) {
       // padding: 0px;
     }
@@ -430,6 +462,7 @@
     box-shadow: $main-box-shadow;
     margin-bottom: 30px;
     cursor: pointer;
+    background-color: $color-white;
 
     &__image-container {
       width: 80px;
@@ -458,7 +491,7 @@
   background-image: url(../img/twitter-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 440px;
 
   &__card {
     padding: 40px;
@@ -476,5 +509,20 @@
         display: none;
       }
     }
+  }
+}
+
+.section-bg {
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(../img/water-mark-bg-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150%;
   }
 }
