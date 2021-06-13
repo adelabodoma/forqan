@@ -1,6 +1,6 @@
 .dropdown-menu {
     li {
-      padding: 10px;
+      padding: 10px 0;
     }
   }
   .dropdown-submenu {
@@ -15,6 +15,7 @@
     border-radius: 0 0 6px 6px;
     background-color: $primary-color;
     color: #fff;
+    padding: 10px;
   }
   
   .dropdown-submenu:hover > .dropdown-menu {

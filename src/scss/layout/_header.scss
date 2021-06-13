@@ -16,6 +16,20 @@
         }
       }
 
+      &__lang-items {
+        a {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          img {
+            height: 25px;
+            border-radius: 5px;
+            margin-#{$right}: 10px;
+          }
+        }
+      }
+
       a {
         @extend .utl-hover-primary;
       }
@@ -269,11 +283,19 @@
           padding: 0;
         }
       }
+
+      @media screen and(max-height: 768px) {
+          padding-top: 40px;
+        &__heading {
+          font-size: rem(30);
+          line-height: 40px;
+        }
+      }
     }
 
     @media screen and(max-height: 400px) {
       height: 100vh;
-     }
+    }
   }
 
   @include media-breakpoint-down(lg) {

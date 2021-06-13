@@ -24,6 +24,11 @@
   @media screen and(max-height: 400px) {
     position: static;
   }
+
+  @media screen and(max-height: 768px) {
+    position: relative;
+    bottom: 40px;
+  }
 }
 
 .about {
