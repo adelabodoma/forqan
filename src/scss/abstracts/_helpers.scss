@@ -137,14 +137,16 @@
   padding-top: 60px;
   padding-bottom: 40px;
 
-  input {
-    margin-#{$right}: 30px;
-  }
-
+  
   &__form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    > *  {
+      margin-#{$right}: 20px;
+      margin-bottom: 20px;
+    }
 
     @include media-breakpoint-down(sm){
       flex-direction: column;
@@ -155,7 +157,7 @@
 
       .form-input-search {
         margin-#{$right}: 0!important;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
       }
 
     }

@@ -8,6 +8,7 @@
   background-position: 18px;
   border: 1px solid transparent;
   border-radius: 6px;
+  min-width: 150px;
 
   &:focus {
     border-color: transparent;
@@ -16,6 +17,8 @@
 }
 
 .form-input {
+  min-width: 150px;
+
   background-color: $color-light-grey-2;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -31,7 +34,7 @@
 .form-input-search {
   position: relative;
   width: 100%;
-  margin-#{$right}: 30px;
+  margin-#{$right}: 20px;
 
   &::before {
     font-family: "icomoon" !important;

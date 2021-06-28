@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
   const swiper = new Swiper(".header__swiper", {
     slidesPerView: 1,
+    effect: "fade",
     spaceBetween: 30,
     loop: true,
     pagination: {
