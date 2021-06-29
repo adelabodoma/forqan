@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
     effect: "fade",
     spaceBetween: 30,
     loop: true,
+    autoplay: true,
     pagination: {
       el: ".header__swiper .swiper-pagination",
       clickable: true,
